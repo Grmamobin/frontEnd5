@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      'poppins': ['src/assets/fonts/Poppins-Medium.ttf'],
+      'poppins': ['../../assets/fonts/Poppins-Medium.ttf'],
     },
     fontSize: {
       'normal18': ['18px', {
