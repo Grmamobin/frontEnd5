@@ -1,5 +1,13 @@
 import { useState } from "react"
+import Group43 from '../../assets/images/Group 43.svg'
+import Group42 from '../../assets/images/Group 42.svg'
 
+import icon5 from '../../assets/images/Icon (5).svg'
+import icon6 from '../../assets/images/Icon (6).svg'
+import icon7 from '../../assets/images/Icon (7).svg'
+import icon8 from '../../assets/images/Icon (8).svg'
+
+import Vector1 from '../../assets/images/Vector (1).svg'
 export default function Footer(){
     const [option , selectOption] = useState({
         1: false,
@@ -18,7 +26,7 @@ export default function Footer(){
                     <p className="text-normal12 mt-5">Over 100,000 students join us monthly</p>
                 </div>
                 <div className="flex items-center gap-4 mt-4">
-                <img src="src/assets/images/Group 43.svg" alt="" />
+                <img src={Group43} alt="" />
                 <ul className="underline">
                     <li><a href="">and others</a></li>
                 </ul>
@@ -27,7 +35,7 @@ export default function Footer(){
             </div>
             <div className="right-par ml-auto lg:mr-[50px] lg:mb-[50px]">
                 <button className="relative rounded-[4px] bg-white text-[#FB9C46] py-[19px] px-[18px] top-[300px] sm:top-[150px]">Get your free lessons now</button>
-                <img className="self-center lg:self-start sm:mt-[-50px] lg:mr-[-50px] lg:rigth-[400px]" src="src/assets/images/Group 42.svg" alt="" />
+                <img className="self-center lg:self-start sm:mt-[-50px] lg:mr-[-50px] lg:rigth-[400px]" src={Group42} alt="" />
             </div>
         </div>
 
@@ -42,20 +50,20 @@ export default function Footer(){
                 a language</p>
                 <div className="link-imgs py-6">
                     <button className="pr-2">
-                        <img src="src/assets/images/Icon (5).svg" alt="" />
+                        <img src={icon5} alt="" />
                     </button>
 
                     <button
                     className="pr-2">
-                        <img src="src/assets/images/Icon (6).svg" alt="" />
+                        <img src={icon6} alt="" />
                     </button>
 
                     <button className="pr-2">
-                        <img src="src/assets/images/Icon (7).svg" alt="" />
+                        <img src={icon7} alt="" />
                     </button>
 
                     <button>
-                        <img src="src/assets/images/Icon (8).svg" alt="" />
+                        <img src={icon8} alt="" />
                     </button>
                 </div>
             </div>
@@ -65,7 +73,7 @@ export default function Footer(){
             <div className="second-col px-12">
                 <div className="flex justify-between py-[9px]" onClick={()=>{selectOption({...option,[1]:!option[1]})}}>
                 <h2 className="text-normal16">Find Teacher</h2>
-                <img src="src/assets/images/Vector (1).svg" style={{transform: option[1]? "rotate(180deg)":""}}  className="lg:hidden" alt="" />
+                <img src={Vector1} style={{transform: option[1]? "rotate(180deg)":""}}  className="lg:hidden" alt="" />
                 </div>
                 <div className={`flex flex-col gap-[9px] ${option[1] ? 'flex' : 'hidden'} lg:flex`}>
 
@@ -85,7 +93,7 @@ export default function Footer(){
                 <h2 className="
                 text-normal16">Lessons</h2>
                 <button onClick={()=>{selectOption({...option,[2]:!option[2]})}}>
-                <img src="src/assets/images/Vector (1).svg" style={{transform: option[2]? "rotate(180deg)":""}}  className="lg:hidden" alt="" />
+                <img src={Vector1} style={{transform: option[2]? "rotate(180deg)":""}}  className="lg:hidden" alt="" />
                 </button>
                 </div>
                 <div className={`flex flex-col gap-[9px] ${option[2] ? 'flex' : 'hidden'} lg:flex`}>
@@ -102,7 +110,7 @@ export default function Footer(){
                 <h2 className="
                 text-normal16">Company</h2>
                 <button onClick={()=>{selectOption({...option,[3]:!option[3]})}}>
-                <img src="src/assets/images/Vector (1).svg" style={{transform: option[3]? "rotate(180deg)":""}} className="lg:hidden" alt="" />
+                <img src={Vector1} style={{transform: option[3]? "rotate(180deg)":""}} className="lg:hidden" alt="" />
                 </button>
                 </div>
                 <div className={`flex flex-col gap-[9px] ${option[3] ? 'flex' : 'hidden'} lg:flex`}>
@@ -121,7 +129,7 @@ export default function Footer(){
                 <h2 className="
                 text-normal16">More</h2>
                 <button onClick={()=>{selectOption({...option,[4]:!option[4]})}}>
-                <img src="src/assets/images/Vector (1).svg" style={{transform: option[4]? "rotate(180deg)":""}}  className="lg:hidden" alt="" />
+                <img src={Vector1} style={{transform: option[4]? "rotate(180deg)":""}}  className="lg:hidden" alt="" />
                 </button>
                 </div>
                 <div className={`flex flex-col gap-[9px] ${option[4] ? 'flex' : 'hidden'} lg:flex`}>

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Sidebar from "../sidebar";
 
+import menu from "../../assets/images/ci_hamburger.svg"
+
 export default function Header(){
     const [isOpen , setIsOpen] = useState(false);
     return(
@@ -44,7 +46,7 @@ export default function Header(){
                 
             </nav>
             <button className="menu flex lg:hidden" onClick={()=>{setIsOpen(true)}} style={{display: isOpen? "none lg:block" : "lg:none block"}}>
-                <img src="src/assets/images/ci_hamburger.svg" alt="menu"/>
+                <img src={menu} alt="menu"/>
             </button>
             {isOpen? <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}></Sidebar> : ""}
             

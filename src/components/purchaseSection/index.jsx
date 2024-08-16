@@ -4,6 +4,19 @@ import "slick-carousel/slick/slick-theme.css";
 import './index.css'
 import { useRef, useState } from "react";
 // import SvgComponent from "../svgComponent";
+
+import firstImg from '../../assets/images/Group 15.svg'
+import secondImg from '../../assets/images/pexels-karolina-grabowska-8005452 1.svg'
+import thirdImg from '../../assets/images/Tick Square.svg'
+import fourthImg from '../../assets/images/Group 21.svg'
+import fifthImg from '../../assets/images/Calendar.svg'
+import sixthImg from '../../assets/images/bi_laptop-fill.svg'
+import seventhImg from '../../assets/images/unsplash_1LyBcHrH4J8.svg'
+import eighthImg from '../../assets/images/“.svg'
+import ninthImg from '../../assets/images/Group 39.svg'
+import tenthImg from '../../assets/images/Photo.svg'
+import eleventh from '../../assets/images/feather_chevron-right.svg'
+
 export default function Purchase(){
     const [more , setMore] = useState({
         1: false,
@@ -29,19 +42,19 @@ export default function Purchase(){
     ]
     const worksInfo = [
         {
-            source : "src/assets/images/Group 21.svg",
+            source : {fourthImg},
             label: "Find a tutor",
             paragraph:"Choose your ideal teacher from over 10,000 qualified language tutors."
 
         },
         {
-            source : "src/assets/images/Calendar.svg",
+            source : {fifthImg},
             label: "Book a lesson",
             paragraph:"Select a lesson time and add it to their calendar."
 
         },
         {
-            source : "src/assets/images/bi_laptop-fill.svg",
+            source : {sixthImg},
             label: "Start learning",
             paragraph:"Simple as that, you’re learning a language."
 
@@ -84,7 +97,7 @@ export default function Purchase(){
         </div>
 
         <div className="left-part">
-            <img src="src/assets/images/Group 15.svg" alt="" />
+            <img src={firstImg} alt="" />
           
         </div>
         </div>
@@ -94,7 +107,7 @@ export default function Purchase(){
             <div className="left-part relative md:mb-0 mt-4">
                 <div className="back absolute bg-[#EFD8C9] rounded-[49px] bottom-0 top-15 left-0 right-0 z-[-1]  w-[289px] md:max-w-[430px] md:max-h-[430px]  h-[289px]"></div>
                 <img className="front rounded-[49px] w-[334px]  md:max-w-[487px] md:max-h-[512px]"
-                 src="src/assets/images/pexels-karolina-grabowska-8005452 1.svg"
+                 src={secondImg}
                   alt="" />
             </div>
 
@@ -106,7 +119,7 @@ export default function Purchase(){
             {learningInfo.map((select , index)=>{
                 return (
                     <div  key={select.label} className="flex box rounded-2xl shadow-[0px_-2px_128px_0px_rgba(5,142,110,0.14)] mt-4  pt-3 pb-5 px-3">
-                    <img className="self-start mr-4" src="src/assets/images/Tick Square.svg" alt="" />
+                    <img className="self-start mr-4" src={thirdImg} alt="" />
                     <div className="flex flex-col">
                     <h2 className="text-normal12 ">{select.label}</h2>
                     <li className="text-normal10 text-[#8D8D8D]">{select.paragraph}<span style={{display:more[index]? "none":"inline"}}>...</span>
@@ -153,7 +166,7 @@ export default function Purchase(){
  })}
      </div>
     <div className="right-part w-full flex justify-center items-center">
-    <img className="rounded-r-2xl shadow-triangle" src="src/assets/images/unsplash_1LyBcHrH4J8.svg" alt="" />
+    <img className="rounded-r-2xl shadow-triangle" src={seventhImg} alt="" />
     {/* <SvgComponent/> */}
 
     </div>
@@ -178,20 +191,20 @@ export default function Purchase(){
             {[...Array(5)].map((key)=>(
                 <div key={key}>
             <div className="right-par flex ">
-                <img className="self-start mr-5 " src="src/assets/images/“.svg" alt="" />
+                <img className="self-start mr-5 " src={eighthImg} alt="" />
             <div className="flex flex-col mt-3">
-                <img className="h-[18px] self-start mb-[14px]" src="src/assets/images/Group 39.svg" alt="" />
+                <img className="h-[18px] self-start mb-[14px]" src={ninthImg} alt="" />
                 <p className="text-[#90A3B4] font-[12px] italic">“With Edu Smart, we can make it easier for you to master a foreign language, it is important for us to grow and engage with our students</p>
                 <div className="flex mt-5 items-center">
                       {/* {  count >= 2  && <img className="rounded-full min-w-[19px] bg-[#FB9C46]  rotate-180 self-start" onClick={prev}   src="src/assets/images/feather_chevron-right.svg" alt="" />} */}
                     <div className="flex">
-                    <img src="src/assets/images/Photo.svg" alt="" />
+                    <img src={tenthImg} alt="" />
                     <div className="flex flex-col ml-3">
                         <h2 className="text-[#FB9C46] font-bold">Jaquon Hart</h2>
                         <p className="text-[#90A3B4]">Digital Marketing Executive, Hypebeast</p>
                     </div>
                     </div>
-                    <img className="rounded-full min-w-[19px] bg-[#FB9C46] ml-[18px]" onClick={next} src="src/assets/images/feather_chevron-right.svg" alt="" />
+                    <img className="rounded-full min-w-[19px] bg-[#FB9C46] ml-[18px]" onClick={next} src={eleventh} alt="" />
                 </div> 
             </div>
             </div>
