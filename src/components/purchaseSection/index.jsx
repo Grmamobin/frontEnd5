@@ -42,19 +42,19 @@ export default function Purchase(){
     ]
     const worksInfo = [
         {
-            source : {fourthImg},
+            source : fourthImg,
             label: "Find a tutor",
             paragraph:"Choose your ideal teacher from over 10,000 qualified language tutors."
 
         },
         {
-            source : {fifthImg},
+            source : fifthImg,
             label: "Book a lesson",
             paragraph:"Select a lesson time and add it to their calendar."
 
         },
         {
-            source : {sixthImg},
+            source : sixthImg,
             label: "Start learning",
             paragraph:"Simple as that, you’re learning a language."
 
@@ -102,7 +102,7 @@ export default function Purchase(){
         </div>
         </div>
 {/* 2 */}
-        <div className="achievement flex md:flex-row flex-col-reverse md:justify-between items-center">
+        <div className="achievement flex md:flex-row flex-col-reverse md:gap-[100px] items-center">
             
             <div className="left-part relative md:mb-0 mt-4">
                 <div className="back absolute bg-[#EFD8C9] rounded-[49px] bottom-0 top-15 left-0 right-0 z-[-1]  w-[289px] md:max-w-[430px] md:max-h-[430px]  h-[289px]"></div>
@@ -112,8 +112,8 @@ export default function Purchase(){
             </div>
 
             <div className="right-part flex flex-col">
-            <h1 className="text-normal32 tracking-widest mt-[15px] mb-[10px] items-center self-center">What Will You <span className="text-[#058E6E]">Get ?</span></h1>
-            <p className="text-[#90A3B4] self-end w-[313px] text-normal12 md:self-center">Lorem ipsum dolor sit amet, consectetur
+            <h1 className="text-normal32 tracking-widest mt-[15px] mb-[10px] items-center self-center md:self-start">What Will You <span className="text-[#058E6E]">Get ?</span></h1>
+            <p className="text-[#90A3B4] self-end w-[313px] text-normal12 md:self-center md:w-full">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Id interdum dui mollis .
             Suspendisse nulla :</p>
             {learningInfo.map((select , index)=>{
@@ -139,7 +139,7 @@ export default function Purchase(){
 <div className="how-to-use mt-[111px] flex md:flex-row flex-col gap-14 lg:items-end lg:mb-[100px] mb-[100px] justify-center items-center">
     <div className="left-part">
         <div className="flex flex-col items-center justify-center">
-        <h1 className="text-normal32 font-[16px] ">Here’s how it <span className="text-[#FB9C46]">works</span></h1>
+        <h1 className="text-normal32 font-[16px] md:self-start">Here’s how it <span className="text-[#FB9C46]">works</span></h1>
         <p className="text-[#90A3B4] font-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Lorem habitant a tincidunt cras accumsan
         integer suscipit. Libero accumsan eget aliquet.</p>

@@ -43,7 +43,7 @@ export default function HomeSection(){
         <img className="relative left-[260px] top-[160px] lg:w-[70px] w-[50px] lg:top-[3px] lg:left-[300px]" src={thirdImg} alt="" />
         <img className="relative right-[40px] top-[50px] lg:w-[70px] w-[50px] h-[70px] lg:bottom-[3px]" src={fourthImg} alt="" />
         <img className="relative bg-white rounded-[21px] shadow-2xl p-4 top-[260px] right-[150px] w-[140px] h-[100px]" src={fifthImg} alt="" />
-        <p className="number3 relative top-[310px] left-[-190px] lg:top-[310px] lg:left-[-340px] font-bold text-white">3+</p>
+        <p className="number3 relative top-[310px] left-[-190px] lg:top-[310px] lg:left-[-192px] font-bold text-white">3+</p>
         <img className="relative top-[210px] right-[310px] w-[30px] lg:top-[70px]" src={sixthImg} alt="" />
         
     </div>

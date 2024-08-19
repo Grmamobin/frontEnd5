@@ -41,7 +41,7 @@ export default function Footer(){
 
         <footer className="
         mt-32 text-white bg-[#F2BF62] pt-12 flex flex-col lg:flex-row">
-            <div className="flex flex-col ">
+            <div className="flex flex-col justify-center items-center">
 
             <div className="flex flex-col lg:flex-row">
             <div className="first-col px-12">
@@ -140,7 +140,7 @@ export default function Footer(){
 
             <div className="border-t"></div>
             </div>
-            <p className="flex justify-center py-[60px]">Copyright © 2021. Crafted with love.</p>
+            <p className="self-center py-[60px]">Copyright © 2021. Crafted with love.</p>
             </div>
 
         </footer>
