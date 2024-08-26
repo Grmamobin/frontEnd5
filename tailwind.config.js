@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      'poppins': ['../../assets/fonts/Poppins-Medium.ttf'],
+      'poppins': ['Poppins'],
+      'DMsans': ['DMSans'],
     },
     fontSize: {
       'normal18': ['18px', {
@@ -32,13 +33,24 @@ export default {
     },
     letterSpacing:{
       widest: '1.12px',
+      wide: '1.05px'
     },
     backgroundImage: {
       'custom-gradient': 'linear-gradient(139.15deg, #F1C365 7.67%, #F6AE54 40.13%, #FF922F 59.18%)',
       'custom-gradient2': 'linear-gradient(270deg, #F1BF62 0.05%, #FF912E 97.84%)',
     },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+  
+      'md': '1024px',
+      // => @media (min-width: 1024px) { ... }
+  
+      'lg': '1280px',
+      // => @media (min-width: 1280px) { ... }
+      'specific':'500px'
+    },
   },
   plugins: [],
-  screens:{
-  }
+
 }

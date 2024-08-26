@@ -7,16 +7,17 @@ export default function Header(){
     const [isOpen , setIsOpen] = useState(false);
     return(
         <>
+
         <div className="whole-page flex justify-between">
-            <h2 className="text-normal18">Tutorify</h2>
-            <nav className="gap-10 ml-auto text-normal16 items-center lg:flex hidden">
-                <ul className="flex items-center text-[#FF922F] flex-col">
+            <h2 className="text-[18px] font-bold self-center">Tutorify</h2>
+            <nav className="gap-10 ml-auto  items-center lg:flex hidden">
+                <ul className="flex items-center text-[#FF922F] flex-col self-end">
                     <li>
-                        <a className="" href="#">Home</a>
+                        <a href="#">Home</a>
                     </li>
-                    <div className="border  border-[#FF922F] w-[33px] bg-[#FF922F] h-1 mt-1 self-cent rounded-[5px]"></div>
+                    <div className="border  border-[#FF922F] w-[33px] bg-[#FF922F] h-1 mt-2 self-cent rounded-[5px]"></div>
                 </ul>
-                <ul className="hover:text-[#FF922F] ">
+                <ul className="hover:text-[#FF922F]">
                     <li>
                         <a href="#">Lessons</a>
                     </li>
@@ -26,6 +27,7 @@ export default function Header(){
                         <a href="#">Find Tutors</a>
                     </li>
                 </ul>
+                
                 <ul className="hover:text-[#FF922F]">
                     <li>
                         <a href="#">About Us</a>
@@ -45,7 +47,7 @@ export default function Header(){
                 </ul>
                 
             </nav>
-            <button className="menu flex lg:hidden" onClick={()=>{setIsOpen(true)}} style={{display: isOpen? "none lg:block" : "lg:none block"}}>
+            <button className="menu flex lg:hidden" onClick={()=>{setIsOpen(true)}} style={{display: isOpen? "none lg:block":"lg:none block"}}>
                 <img src={menu} alt="menu"/>
             </button>
             {isOpen? <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}></Sidebar> : ""}
