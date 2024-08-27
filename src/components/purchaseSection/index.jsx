@@ -94,7 +94,7 @@ export default function Purchase(){
 
             <div className="button-section flex items-center gap-[20px] mb-[42px]">
                 <button className="bg-[#FB9C46] rounded-2xl py-[10px] px-4  text-white text-[12px] lg:text-[16px] w-[153px] h-[47px] lg:w-[199px] lg:h-[61px]">Book Your Lessons</button>
-                <button className=" rounded-2xl py-[10px] px-4 border border-[#FB9C46] text-[#FB9C46] lg:w-[199px]  w-[153px] h-[47px] lg:h-[61px] text-[12px] lg:text-[16px]">Find Your Tutors</button>
+                <button className=" rounded-2xl py-[10px] px-4 border-[3px] border-[#FB9C46] text-[#FB9C46] lg:w-[199px]  w-[153px] h-[47px] lg:h-[61px] text-[12px] lg:text-[16px]">Find Your Tutors</button>
             </div>
         </div>
 
@@ -103,7 +103,7 @@ export default function Purchase(){
         </div>
         </div>
 {/* 2 */}
-        <div className="achievement flex md:flex-row flex-col-reverse md:gap-[100px]">
+        <div className="achievement flex md:flex-row flex-col-reverse md:gap-[100px] lg:h-[500px] md:h-[400px] h-[900px] md:mb-[200px]">
             
             <div className="left-part relative self-center">
                 <div className="back absolute bg-[#EFD8C9] rounded-[49px] bottom-0 top-15 left-0 right-0 z-[-1]  w-[289px] md:max-w-[430px] md:max-h-[430px]  h-[289px]"></div>
@@ -113,7 +113,7 @@ export default function Purchase(){
             </div>
 
             <div className="right-part flex flex-col">
-            <h1 className="text-[30px] lg:text-[36px] text-[#393939] leading-[160%] font-[600] tracking-wide mb-[10px] items-center md:self-start">What Will You <span className="text-[#058E6E]">Get ?</span></h1>
+            <h1 className="text-[30px] lg:text-[36px] text-[#393939] leading-[160%] font-[600] tracking-wide mb-[10px] items-center md:self-start">What Will You <span className="text-[#058E6E]">Get </span>?</h1>
             <p className="text-[#90A3B4]  w-[313px] text-[12px] md:self-center md:w-full lg:text-[18px]">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Id interdum dui mollis .
             Suspendisse nulla :</p>

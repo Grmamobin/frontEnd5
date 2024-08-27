@@ -47,7 +47,7 @@ export default function HomeSection(){
         
             <div className="absolute">
                 <img className="relative bg-white rounded-[21px] shadow-2xl p-4 right-[120px] w-[112px] lg:w-[237px] lg:top-48 lg:right-48 top-24" src={fifthImg} alt="" />
-                <p className="absolute top-[183%] text-[12px] left-[-38%] font-bold text-white lg:text-[30px] lg:left-[-8%] lg:top-[190%]">3+</p>
+                <p className="absolute top-[183%] text-[12px] left-[-38%] text-white lg:text-[30px] lg:left-[-8%] lg:top-[191%]">3+</p>
                 <img className="absolute top-[110%] lg:top-[115%] lg:right-[165%] right-[185%] w-[30px] lg:w-[50px]" src={sixthImg} alt="" />
             </div>
 

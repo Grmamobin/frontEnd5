@@ -34,7 +34,7 @@ export default function Footer(){
 
             </div>
             <div className="right-par ml-auto lg:mr-[50px] lg:mt-[80px] lg:mb-auto">
-                <button className="relative rounded-[4px] bg-white text-[#FB9C46] py-[19px] px-[18px] bottom-[-280px] right-[100px] sm:top-[150px] sm:left-[60px] ml-[100px] specific:ml-0 sm:ml-0">Get your free lessons now</button>
+                <button className="relative rounded-[4px] bg-white text-[#FB9C46] py-[19px] px-[18px] bottom-[-280px] right-[100px] sm:top-[85px] sm:left-[60px] ml-[100px] specific:ml-0 sm:ml-0">Get your free lessons now</button>
                 <img className="self-center lg:self-start sm:mt-[-50px] lg:mr-[-50px] lg:rigth-[400px]" src={Group42} alt="" />
             </div>
         </div>
