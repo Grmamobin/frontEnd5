@@ -21,9 +21,9 @@ import eleventh from '../../assets/images/feather_chevron-right.svg'
 
 export default function Purchase(){
     const [more , setMore] = useState({
+        0: false,
         1: false,
         2: false,
-        3: false,
     });
     const learningInfo = [
         {
@@ -195,7 +195,7 @@ export default function Purchase(){
             {...settings}
             className="lg:w-[500px]"
             >
-            {[...Array(5)].map((key)=>(
+            {[...Array(5)].map((_,key)=>(
                 <div key={key}>
             <div className="right-par flex ">
                 <img className="self-start mr-5 w-[30px] pt-1" src={eighthImg} alt="" />
